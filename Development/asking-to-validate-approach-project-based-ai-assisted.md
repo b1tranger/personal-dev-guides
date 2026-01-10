@@ -42,6 +42,8 @@ Prottoy 友人かな？
 unless the committee is reckless like Musk
 ```
 
+---
+
 Chator jnr:<br>
 
 ```
@@ -70,6 +72,9 @@ but
 Node --> Laravel
 MongoDB --> PostgreSQL
 ```
+- "uni joto cv dekhse sob gulote e postGreSql chilo": implies figuring out the learning path by market demand, I suppose/
+
+---
 
 Rabin bhai: <br>
 

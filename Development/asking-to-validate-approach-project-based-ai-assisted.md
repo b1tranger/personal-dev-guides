@@ -17,8 +17,10 @@ Prottoy 友人かな？
 wa'alaikumussalam
 github doc valo idea
 if it works for you thats great
-just fundamentals gula ekdom valo kore shikhe rakho / used to hoe nao
-example codes poro, dekho j onnora kmne ki krse
+```
+<mark>just fundamentals gula ekdom valo kore shikhe rakho / used to hoe nao</mark><br>
+<mark>example codes poro, dekho j onnora kmne ki krse</mark>
+```
 egulatei onk experience bare
 You replied to Prottoy 友人かな？
 good idea

@@ -1,0 +1,1 @@
+- idea about anime gallery https://github.com/b1tranger/Anime-Gallery/blob/main/README.md

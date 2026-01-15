@@ -9,7 +9,16 @@
 Prottoy: 
 ```
 Assalamu عlaikum brother
+ei approach ta kemon?
+of course ami tomar vibe coding er suggestion ta bhuli ni
+but for now, this is what I decided to use AI for
+
 Prottoy 友人かな？
+wa'alaikumussalam
+github doc valo idea
+if it works for you thats great
+just fundamentals gula ekdom valo kore shikhe rakho / used to hoe nao
+example codes poro, dekho j onnora kmne ki krse
 egulatei onk experience bare
 You replied to Prottoy 友人かな？
 good idea

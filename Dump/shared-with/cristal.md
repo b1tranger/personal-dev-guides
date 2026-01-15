@@ -1,1 +1,2 @@
 - idea about anime gallery https://github.com/b1tranger/Anime-Gallery/blob/main/README.md
+- on learning approach https://github.com/b1tranger/personal-dev-guides/blob/main/Development/asking-to-validate-approach-project-based-ai-assisted.md

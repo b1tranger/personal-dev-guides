@@ -1,2 +1,3 @@
 - idea about anime gallery https://github.com/b1tranger/Anime-Gallery/blob/main/README.md
 - on learning approach https://github.com/b1tranger/personal-dev-guides/blob/main/Development/asking-to-validate-approach-project-based-ai-assisted.md
+- about hult prize, skill, career https://github.com/user-attachments/files/24657887/prottoy-career-skill-hult-prize.pdf

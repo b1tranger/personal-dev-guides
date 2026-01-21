@@ -1,0 +1,279 @@
+Source Code
+[6:42 AM] 
+OP
+ Julius: Heya. First of all thank you for the amazing app!
+
+Is there a reason why https://github.com/hayase-app/electron-dist is private? It is used in the build process for hayase-app/electron.
+What exactly is in that repository and why should it not be public? Is there some secret sauce to that custom electron binary? :D
+
+Thank you in advance
+[7:09 AM]unknown
+: yes its a custom electron binary, its private for reasons I cannot say publicly, but it's not some made up reasons
+[7:10 AM]unknown
+: if you want to develop hayase for electron, in the electron-builder.yml u can comment out the electrondist thing
+[7:11 AM] 
+OP
+ Julius: Oh that's very good to know, thank you!
+
+Currently looking for a way to build hayase from source for transparency purposes! Will try that out :D
+[7:12 AM]unknown
+: thats not possible
+[7:12 AM]unknown
+: most of hayase's code is source available
+[7:12 AM]unknown
+: but not all
+[7:12 AM]unknown
+: theres proprietary code you cant access
+[7:13 AM]unknown
+: you can build hayase for electron, but it will be missing features from the custom electron dist
+[7:13 AM] 
+OP
+ Julius: Mhh I see. I'm guessing it will stay that way forever?
+[7:14 AM]unknown
+: yes
+[7:14 AM]unknown
+: you'll get 95% of the functionality on electron
+[7:14 AM]unknown
+: except for the fact that hayase is loaded from a remote website, not local files
+[7:14 AM]unknown
+: so you'd need to host a domain too to replicate its functionality
+[7:16 AM]unknown
+: and the android app you will not be able to build at all
+[7:16 AM]unknown
+: since i run a turbo custom patched version of nodejs specifically for android
+[7:16 AM]unknown
+: which nodejs itself officially doesnt support
+[7:20 AM] 
+OP
+ Julius: Ohh okay interesting. Thanks for all the info 📝 .
+
+Can explain what I'm doing the research for. Stumbled into some "trust issues" from other people, because of the "untransparent" build flow. Wanted to see if it's at all possible to build from source as mentioned. 
+
+Ima play around with the info you gave me :D
+
+As mentioned great app and keep up the good work! Also pretty incredible to patch your own nodejs lol 
+
+Have a good day :D
+[7:21 AM]unknown
+: yeah, the intept people in shiru discord like throwing insults
+[7:22 AM]unknown
+: mostly because i hurt their ego when they came to my discord and i insulted them
+[7:22 AM]unknown
+: so now they make up shit just to get back at me
+[7:22 AM]unknown
+: while they themselves have no knowledge of whats actually required to develop such an app
+[7:22 AM] 
+OP
+ Julius: Haha they probably deserved that
+[7:22 AM]unknown
+: and they have NO clue what it means to publish their electron builds publicly 
+[7:22 AM]unknown
+: because they do NOT have the licenses to do that
+[7:24 AM]unknown
+: and before any form of DMCA takes you down
+[7:24 AM]unknown
+: license and patent violations will 
+[7:24 AM]unknown
+: they dont seem to understand that, but that's fine
+[7:25 AM] 
+OP
+ Julius: Yeah.. frustrating to not be able to just "do good" things... But I can see that this is a complicated topic that I as well as the Shiru people have no idea about xD
+[7:26 AM]unknown
+: anyways, next time i recommend you look at least a little bit at the people making those kind of acusations
+[7:26 AM]unknown
+: they are usually salty 13-15 year olds, with no history of programing, throwing around their made up truths
+[7:27 AM]unknown
+: and they insult me, and my work, when i've been doing FOSS for over 5 years at this point, and I'm in the top 1% of FOSS developers
+[7:28 AM]unknown
+: its why i for the most part dont interact with those people
+[7:30 AM] 
+OP
+ Julius: Oh okay sounds like big beef haha. Well this is more in context to get this into e.g. nixpkgs. 
+They are quite into the build from source mentality or have a binary from some major coorporation with millions of users.
+
+I don't think they are specifically against you it's just their rules up there.
+
+But man, can imagine how frustrating it is following the law and then getting accused for the consequenses of that....
+[7:31 AM]unknown
+: yeah u cant build hayase from source
+[7:31 AM]unknown
+: even if i made the build process FOSS
+[7:31 AM]unknown
+: it'd take you 6-ish hours to compile the custom electron and chromium build i run
+[7:31 AM]unknown
+: so its very much a nothing burger
+[7:34 AM]unknown
+: not really? i'm not rly taking about any specific people, its just a stereotype, people come here to request something from me, i insult them for not reading the faq, not reading settings and not reading other issues people posted, they cry i antagonize them, and they go to other communities to rant, and those are usually old miru forks, which they praise for "being so much better", when in practice they are still 99.5% my codebase, and they add like 1 minor change, which is rarely thought tru well, which they dont consider the consequences for, and then they circlejerk eachother
+[7:34 AM] 
+OP
+ Julius: Yeah no worries you've made it quite clear that that won't be able to happen haha.
+
+Not gonna deter me or anybody really that enjoys a well programmed app of using it. Can only imagine how much time that project took up.
+[7:36 AM]unknown
+: yeah its quite a bit of work
+[7:36 AM]unknown
+: but realistically, hayase was rebuild from scratch and the end of last year
+[7:36 AM]unknown
+: and it took me like... 5 months?
+[7:37 AM]unknown
+: but the problem is, the 4 years of learning shit, to get it done
+[7:37 AM]unknown
+: hayase is effectively a massive collection of "first in the world" solutions
+[7:37 AM]unknown
+: so there was a LOT of work creating said first in the world solutions
+[7:37 AM]unknown
+: as no1 else did a lot of this shit b4
+[7:37 AM] 
+OP
+ Julius: Very frustrating... I hope my question wasn't asked already xD
+[7:37 AM]unknown
+: that took up the majority of the time
+[7:38 AM]unknown
+: fortunately for you, hayase hasnt had any contributors, i for the most part built this solo 
+[7:38 AM]unknown
+: with some minor exceptions for the electron build, and external api data
+[7:39 AM] 
+OP
+ Julius: Yeah I saw your work on your custom webtorrent stuff, albeit I don't understand any of it
+[7:39 AM]unknown
+: oh yeah i effectively singehandedly unfucked webtorrent
+[7:39 AM]unknown
+: i made it like 80% smaller and like >60% faster
+[7:39 AM]unknown
+: it went from "yeah i can do 100 connections" to "5k connections? pfff easy"
+[7:39 AM] 
+OP
+ Julius: Super impressive
+[7:40 AM]unknown
+: and that wasnt even the hard part to do hahahah
+[7:40 AM] 
+OP
+ Julius: Probably why we can get 40mb/s
+[7:40 AM]unknown
+: you  should see what i did for the subtitle stuff
+[7:40 AM] 
+OP
+ Julius: Oh I saw that jass stuff
+[7:40 AM]unknown
+: sir, webtorrent can do almost 2Gbit/s on a single thread
+[7:41 AM]unknown
+: not even that
+[7:41 AM]unknown
+: then there's the subtitle extraction itself
+[7:41 AM]unknown
+: which is also turbo crazy
+[7:41 AM]unknown
+: but yeah jassub also has a fuckload of turbo crazy shit
+[7:42 AM]unknown
+: the color space correction i run on subtitles is fucking black magic for example
+[7:42 AM]unknown
+: and all the WASM optimisations i added too
+[7:42 AM]unknown
+: the GPU acceleration for it....
+[7:42 AM]unknown
+: there's so much
+[7:42 AM]unknown
+: and thats JUST subtitles....
+[7:42 AM] 
+OP
+ Julius: Cool to see, that you are clearly very passionate about this xD
+[7:42 AM] 
+OP
+ Julius: Even for "JUST" subtitles
+[7:42 AM] 
+OP
+ Julius: How many users does hayase actually have do you know?
+[7:43 AM]unknown
+: i do know
+[7:43 AM]unknown
+: but i usually dont share those stats
+[7:43 AM] 
+OP
+ Julius: Oh yeah sorry haha
+[7:43 AM]unknown
+: last week i lost almost 15% of my userbase
+[7:43 AM] 
+OP
+ Julius: The DMCA thing?
+[7:43 AM]unknown
+: nah
+[7:44 AM]unknown
+: dmca was over a month ago
+[7:44 AM]unknown
+: it did nothing
+[7:44 AM]unknown
+: because i assume people from shiru, or some1 else, mass reported extensions for "malware" and it got taken down without manual review 
+[7:44 AM] 
+OP
+ Julius: Oof petty if thats what happened
+[7:44 AM]unknown
+: well I DMCA'd shiru
+[7:45 AM]unknown
+: because they took copyrighted code from hayase, and thought they could get away with it
+[7:45 AM]unknown
+: i warned them twice, gave them time to remove the code twice
+[7:45 AM]unknown
+: but they didnt seem to care
+[7:45 AM]unknown
+: dont rly care, not my problem
+[7:45 AM] 
+OP
+ Julius: Yeah your License is valid so not your problem 
+[7:45 AM]unknown
+: as I said, license and patent violations will bite you in the ass WAY before anything else 
+[7:48 AM] 
+OP
+ Julius: Well it's 2:48 here so gotta go.
+
+Very cool to see what kind of person is behind this clearly amazing project. Didn't think I'd get the chance to just talk haha.
+You're great!
+[7:50 AM]unknown
+: https://tenor.com/view/bender-shutupbaby-iknowit-futurama-courtroom-gif-4885109
+GIF
+[3:37 PM]Jame
+: definitely not impossible
+[3:37 PM]Jame
+: annoying and convoluted, yeah 
+[3:37 PM]Jame
+: but i managed to get it working, both the electron app and android app 
+[3:38 PM]Jame
+: not sure what missing features youre talking about, i havent noticed any
+[5:30 PM] 
+OP
+ Julius: Oh, do you mind showing how you built the elctron app in particular. Haven't tried it myself yet but getting info in advance never hurts :D
+[8:48 PM]Dont Judge Me: How to update the app?
+[9:41 PM]unknown
+: working, and working correctly are separate things
+[9:41 PM]unknown
+: on android you'll be running the wrong version of node
+[9:42 PM]unknown
+: and on electron you'll be missign a bunch of codecs and hardware acceleration
+[9:42 PM]unknown
+: as i said, comment out the custom electron dist
+[9:42 PM]unknown
+: and you get what i said above
+[8:17 AM]Jame
+: oh nah i found the script you use for node mobile
+[11:35 AM]Jame
+: getting the electron app running is pretty straightforward (albeit without some features it seems), its just the android app thats fucked 
+[9:12 PM]unknown
+: did u end up getting NAPI to work?
+[9:12 PM]unknown
+: its still fucked for me
+[9:12 PM]unknown
+: considering downgrading node bc of it
+[4:59 AM]Jame
+: ah. it would seem not
+
+12-02 12:08:36.555 28317 28494 E NodeJS-Engine:     at Object.<anonymous> (/data/data/watch.miru/files/nodejs/public/node_modules/utp-native/lib/binding.js:1:68)       12-02 12:11:57.786 28868 29020 E NodeJS-Engine: WebTorrent: uTP not supported Error: dlopen failed: cannot locate symbol "napi_get_cb_info" referenced by "/data/data/watch.miru/files/nodejs/public/node_modules/utp-native/prebuilds/android-x64/node.napi.node"...
+
+
+I'll keep messing with it for a while and see if i can get it to work
+[6:06 AM]unknown
+: any luck?
+[6:06 AM]unknown
+: i honestly cba fixing it myself 
+[6:06 AM]unknown
+: XD
+[5:44 PM]Jame
+: I'm ngl i haven't had the time to actually look into it yet beyond what i did that day

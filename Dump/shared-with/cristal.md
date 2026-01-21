@@ -1,3 +1,4 @@
 - idea about anime gallery https://github.com/b1tranger/Anime-Gallery/blob/main/README.md
 - on learning approach https://github.com/b1tranger/personal-dev-guides/blob/main/Development/asking-to-validate-approach-project-based-ai-assisted.md
 - about hult prize, skill, career https://github.com/user-attachments/files/24657887/prottoy-career-skill-hult-prize.pdf
+- about multiple repo for one project:<br>"yes, ui, backend, frontend, 3rd party sometimes takes separate repos to simplify development" [link](https://discord.com/channels/1439269971598381189/1444126252708401222) | [file]()
